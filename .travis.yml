@@ -15,8 +15,7 @@ before_install:
 - eval "$(ssh-agent -s)"
 - cp .travis/deploy_rsa ~/.ssh/deploy_rsa
 - chmod 600 ~/.ssh/deploy_rsa
-- export SSHPASS=$DEPLOY_PASS
-- sshpass ssh-add ~/.ssh/deploy_rsa
+- ssh-add ~/.ssh/deploy_rsa
 
 deploy:
 - provider: script
