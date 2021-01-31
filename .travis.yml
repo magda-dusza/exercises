@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '9'
 dist: trusty
-sudo: false
+sudo: true
 addons:
   ssh_known_hosts:
   - 77.55.193.202
